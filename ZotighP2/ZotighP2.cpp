@@ -18,6 +18,9 @@ int main()
 	// Variables 
 	int colorChoice;
 
+	// This is the HANDLE method
+	HANDLE screen = GetStdHandle(STD_OUTPUT_HANDLE);
+
 	// cout statement that tells the user 
 	cout << "Purpose: A C++ program that asks the user to select a color and a shape to draw." << endl;
 
@@ -31,12 +34,10 @@ int main()
 
 	// cout to ask for type of image they want
 
-	// This is the HANDLE method
-	HANDLE screen = GetStdHandle(STD_OUTPUT_HANDLE);
+	// Ascii...imgs SMmiley USE -> cout << "" << endl;       PT1
+	// Also the sets the color user picked
 	SetConsoleTextAttribute(screen, colorChoice);
-	 
-	// Ascii...imgs SMmiley USE -> cout << "" << endl;      PT1
-	cout << " XXXXXXXXX " << endl;
+	cout << "\n XXXXXXXXX " << endl;
 	cout << "X  0   0  X" << endl;
 	cout << "X         X" << endl;
 	cout << "X _     _ X" << endl;
@@ -44,29 +45,39 @@ int main()
 	cout << " XXXXXXXXX " << endl;
 
 	// Ascii...imgs Triangle USE -> cout << "" << endl;      PT1
-	cout << "     X     " << endl;
-	cout << "    XXX    " << endl;
-	cout << "   XXXXX   " << endl;
-	cout << "  XXXXXXX  " << endl;
+	// Also the sets the color user picked
+	SetConsoleTextAttribute(screen, colorChoice);
+	// Not sure which way I want the triangle
+	//cout << "     X     " << endl;
+	//cout << "    XXX    " << endl;
+	//cout << "   XXXXX   " << endl;
+	//cout << "  XXXXXXX  " << endl;
+	//cout << " XXXXXXXXX " << endl;
+	cout << "\nXXXXXXXXXXX" << endl;
 	cout << " XXXXXXXXX " << endl;
-	cout << "XXXXXXXXXXX" << endl;
+	cout << "  XXXXXXX  " << endl;
+	cout << "   XXXXX   " << endl;
+	cout << "    XXX    " << endl;
+	cout << "     X     " << endl;
 
-	// Ascii...imgs Rand USE -> cout << "" << endl;      PT2
-	cout << "X         X" << endl;
+	// Ascii...imgs RandBunnyFlip USE -> cout << "" << endl;          PT3
+	// Also the sets the color user picked
+	SetConsoleTextAttribute(screen, colorChoice);
+	cout << "\nXXXXXXXXXXX" << endl;
 	cout << "X         X" << endl;
 	cout << "X  (/(/   X" << endl;
 	cout << "X  (+-)   X" << endl;
-	cout << "X ((')(') X" << endl;
+	cout << "X ((')('')X" << endl;
 	cout << "X         X" << endl;
+	cout << "X WANTED  X" << endl;
+	cout << "XXXXXXXXXXX" << endl;
 	
-	
-	
-	int i = 2;
 
+	int i = 0;
 	//My play do while loop
 	do {
 
-	} while (i =0);
+	} while (i = 0);
 
 }
 
