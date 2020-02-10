@@ -67,7 +67,7 @@ int main()
 	cout <<   "X         X" << endl;
 	cout <<   "X  (/(/   X" << endl;
 	cout <<   "X  (+-)   X" << endl;
-	cout <<   "X ((')('')X" << endl;
+	cout <<   "X (()('') X" << endl;
 	cout <<   "X         X" << endl;
 	cout <<   "X WANTED  X" << endl;
 	cout <<   "XXXXXXXXXXX" << endl;
