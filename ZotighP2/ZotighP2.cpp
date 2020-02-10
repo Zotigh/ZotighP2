@@ -18,11 +18,16 @@ int main()
 	// Variables 
 	int colorChoice;
 
-	// cout statement that 
+	// cout statement that tells the user 
+	cout << "Purpose: A C++ program that asks the user to select a color and a shape to draw." << endl;
 
 	// cout/cin statements that are used to get the users input 
 	cout << "Please enter a color you would like to use: ";
 	cin >> colorChoice;
+
+	// cout statement that asks the user what img they would like
+	cout << "what image would you like to see? ";
+	//cin >> ;
 
 	// cout to ask for type of image they want
 
