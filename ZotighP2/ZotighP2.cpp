@@ -35,13 +35,38 @@ int main()
 	HANDLE screen = GetStdHandle(STD_OUTPUT_HANDLE);
 	SetConsoleTextAttribute(screen, colorChoice);
 	 
-	// Ascii...imgs USE -> cout << "" << endl;
+	// Ascii...imgs SMmiley USE -> cout << "" << endl;      PT1
 	cout << " XXXXXXXXX " << endl;
 	cout << "X  0   0  X" << endl;
 	cout << "X         X" << endl;
 	cout << "X _     _ X" << endl;
 	cout << "X  -----  X" << endl;
 	cout << " XXXXXXXXX " << endl;
+
+	// Ascii...imgs Triangle USE -> cout << "" << endl;      PT1
+	cout << "     X     " << endl;
+	cout << "    XXX    " << endl;
+	cout << "   XXXXX   " << endl;
+	cout << "  XXXXXXX  " << endl;
+	cout << " XXXXXXXXX " << endl;
+	cout << "XXXXXXXXXXX" << endl;
+
+	// Ascii...imgs Rand USE -> cout << "" << endl;      PT2
+	cout << "X         X" << endl;
+	cout << "X         X" << endl;
+	cout << "X  (/(/   X" << endl;
+	cout << "X  (+-)   X" << endl;
+	cout << "X ((')(') X" << endl;
+	cout << "X         X" << endl;
+	
+	
+	
+	int i = 2;
+
+	//My play do while loop
+	do {
+
+	} while (i =0);
 
 }
 
