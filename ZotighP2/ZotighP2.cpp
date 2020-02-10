@@ -26,7 +26,13 @@ int main()
 	HANDLE screen = GetStdHandle(STD_OUTPUT_HANDLE);
 	SetConsoleTextAttribute(screen, colorChoice);
 	 
-	// Ascii ...imgs
+	// Ascii...imgs USE -> cout << "" << endl;
+	cout << " XXXXXXXXX " << endl;
+	cout << "X  0   0  X" << endl;
+	cout << "X         X" << endl;
+	cout << "X _     _ X" << endl;
+	cout << "X  -----  X" << endl;
+	cout << " XXXXXXXXX " << endl;
 
 }
 
