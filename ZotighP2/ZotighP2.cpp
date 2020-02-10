@@ -1,5 +1,7 @@
 // ZotighP2.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+//Lance Zotigh (lzotigh1@cnm.edu)
+//Date: (2/10/19 - 1/17/19)
+//Porpose: 
 
 #include <iostream>
 #include <windows.h>
@@ -8,7 +10,7 @@ using namespace std;
 
 int main()
 {
-
+	cout << "hello";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
