@@ -38,11 +38,11 @@ int main()
 	// Also the sets the color user picked
 	SetConsoleTextAttribute(screen, colorChoice);
 	cout << "\n XXXXXXXXX " << endl;
-	cout << "X  0   0  X" << endl;
-	cout << "X         X" << endl;
-	cout << "X _     _ X" << endl;
-	cout << "X  -----  X" << endl;
-	cout << " XXXXXXXXX " << endl;
+	cout <<   "X  0   0  X" << endl;
+	cout <<   "X         X" << endl;
+	cout <<   "X _     _ X" << endl;
+	cout <<   "X  -----  X" << endl;
+	cout <<   " XXXXXXXXX " << endl;
 
 	// Ascii...imgs Triangle USE -> cout << "" << endl;      PT1
 	// Also the sets the color user picked
@@ -54,23 +54,23 @@ int main()
 	//cout << "  XXXXXXX  " << endl;
 	//cout << " XXXXXXXXX " << endl;
 	cout << "\nXXXXXXXXXXX" << endl;
-	cout << " XXXXXXXXX " << endl;
-	cout << "  XXXXXXX  " << endl;
-	cout << "   XXXXX   " << endl;
-	cout << "    XXX    " << endl;
-	cout << "     X     " << endl;
+	cout <<   " XXXXXXXXX " << endl;
+	cout <<   "  XXXXXXX  " << endl;
+	cout <<   "   XXXXX   " << endl;
+	cout <<   "    XXX    " << endl;
+	cout <<   "     X     " << endl;
 
 	// Ascii...imgs RandBunnyFlip USE -> cout << "" << endl;          PT3
 	// Also the sets the color user picked
 	SetConsoleTextAttribute(screen, colorChoice);
 	cout << "\nXXXXXXXXXXX" << endl;
-	cout << "X         X" << endl;
-	cout << "X  (/(/   X" << endl;
-	cout << "X  (+-)   X" << endl;
-	cout << "X ((')('')X" << endl;
-	cout << "X         X" << endl;
-	cout << "X WANTED  X" << endl;
-	cout << "XXXXXXXXXXX" << endl;
+	cout <<   "X         X" << endl;
+	cout <<   "X  (/(/   X" << endl;
+	cout <<   "X  (+-)   X" << endl;
+	cout <<   "X ((')('')X" << endl;
+	cout <<   "X         X" << endl;
+	cout <<   "X WANTED  X" << endl;
+	cout <<   "XXXXXXXXXXX" << endl;
 	
 
 	int i = 0;
