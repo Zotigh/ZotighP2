@@ -8,9 +8,17 @@
 
 using namespace std;
 
+//Constants
+const int QUIT = 6;
+const int MAX_COLORS = 6;
+const int MAX_PIX = 3;
+
 int main()
 {
-	cout << "hello";
+	int colorChoice;
+	HANDLE screen = GetStdHandle(STD_OUTPUT_HANDLE);
+	SetConsoleTextAttribute(screen, colorChoice);
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
