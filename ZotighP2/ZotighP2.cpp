@@ -1,7 +1,7 @@
 // ZotighP2.cpp : This file contains the 'main' function. Program execution begins and ends there.
 // Lance Zotigh (lzotigh1@cnm.edu)
 // Date: (2/10/19 - 1/17/19)
-// Porpose: A C++ program that asks the user to select a color and a shape to draw.  
+// Purpose: A C++ program that asks the user to select a color and a shape to draw.  
 
 #include <iostream>
 #include <windows.h>
@@ -18,9 +18,13 @@ int main()
 	// Variables 
 	int colorChoice;
 
-	// cout statements that are used to get the users input 
+	// cout statement that 
+
+	// cout/cin statements that are used to get the users input 
 	cout << "Please enter a color you would like to use: ";
 	cin >> colorChoice;
+
+	// cout to ask for type of image they want
 
 	// This is the HANDLE method
 	HANDLE screen = GetStdHandle(STD_OUTPUT_HANDLE);
