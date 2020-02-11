@@ -29,7 +29,13 @@ int main()
 	// My play do while loop
 	do {		
 		// cout/cin statements that are used to get the users input 
-		cout << "\nPlease enter a color you would like to use: ";
+		cout << "\nPlease enter a color you would like to use: " << endl
+			<< "1 = Black" << endl
+			<< "2 = Green" << endl
+			<< "3 = Cyan" << endl
+			<< "4 = Red" << endl
+			<< "5 = Purple" << endl
+			<< "6 = quit" << endl;
 		cin >> colorChoice;
 
 		// cout/cin statements that are used to get the users input 
@@ -49,7 +55,7 @@ int main()
 		}
 
 		if (choice == 2) {
-		// Ascii...imgs Triangle USE -> cout << "" << endl;      PT1
+		// Ascii...imgs Triangle USE -> cout << "" << endl;      PT2
 		// Also the sets the color user picked
 		SetConsoleTextAttribute(screen, colorChoice);
 		// Not sure which way I want the triangle
@@ -67,7 +73,7 @@ int main()
 		}
 
 		if (choice == 3) {
-		// Ascii...imgs RandBunnyFlip USE -> cout << "" << endl;          PT3
+		// Ascii...imgs RandBunnyFlip USE -> cout << "" << endl;    PT3
         // Also the sets the color user picked
 		SetConsoleTextAttribute(screen, colorChoice);
 		cout << "\nXXXXXXXXXXX" << endl;
