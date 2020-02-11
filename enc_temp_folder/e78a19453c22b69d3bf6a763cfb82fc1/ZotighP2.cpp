@@ -29,7 +29,7 @@ int main()
 	// My play do while loop
 	do {		
 		// cout/cin statements that are used to get the users input 
-		cout << "\nPlease enter a color you would like to use: ";
+		cout << "Please enter a color you would like to use: ";
 		cin >> colorChoice;
 
 		// cout/cin statements that are used to get the users input 
@@ -81,7 +81,7 @@ int main()
 		}
 
 		// go again prompt
-		cout << "\nGo again? (y/n) ";
+		cout << "Go again? (y/n) ";
 		cin >> again;
 
 	} while (again == "y");
