@@ -47,7 +47,7 @@ int main()
 			if (choice == 1) {
 				// Ascii...imgs SMmiley USE -> cout << "" << endl;       PT1
 				// Also the sets the color user picked
-				SetConsoleTextAttribute(screen, colorChoice);
+				SetConsoleTextAttribute(screen, colorChoice + 8);
 				cout << "\n XXXXXXXXX " << endl;
 				cout << "X  0   0  X" << endl;
 				cout << "X         X" << endl;
@@ -59,7 +59,7 @@ int main()
 			if (choice == 2) {
 				// Ascii...imgs Triangle USE -> cout << "" << endl;      PT2
 				// Also the sets the color user picked
-				SetConsoleTextAttribute(screen, colorChoice);
+				SetConsoleTextAttribute(screen, colorChoice + 8);
 				// Not sure which way I want the triangle
 				//cout << "     X     " << endl;
 				//cout << "    XXX    " << endl;
@@ -77,7 +77,7 @@ int main()
 			if (choice == 3) {
 				// Ascii...imgs RandBunnyFlip USE -> cout << "" << endl;    PT3
 				// Also the sets the color user picked
-				SetConsoleTextAttribute(screen, colorChoice);
+				SetConsoleTextAttribute(screen, colorChoice + 8);
 				cout << "\nXXXXXXXXXXX" << endl;
 				cout << "X         X" << endl;
 				cout << "X  (/(/   X" << endl;
@@ -89,15 +89,10 @@ int main()
 			} 
 
 		} while (colorChoice <= 5 && colorChoice >= 1 && choice != 6);
-
-		// go again prompt
-		//cout << "\nQuit? (y/n) ";
-		//cin >> again;
 		
-	} while (colorChoice != 6);
+	} while (colorChoice != 6 || choice != 6);
 
 	cout << "Thank you for using, good-bye!" << endl;
-	
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
