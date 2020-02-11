@@ -8,7 +8,7 @@
 
 using namespace std;
 
-//Constants
+// Constants
 const int QUIT = 6;
 const int MAX_COLORS = 6;
 const int MAX_PIX = 3;
@@ -17,68 +17,75 @@ int main()
 {
 	// Variables 
 	int colorChoice;
+	string again;
+	int choice;
 
 	// This is the HANDLE method
 	HANDLE screen = GetStdHandle(STD_OUTPUT_HANDLE);
-
+	
 	// cout statement that tells the user 
 	cout << "Purpose: A C++ program that asks the user to select a color and a shape to draw." << endl;
 
-	// cout/cin statements that are used to get the users input 
-	cout << "Please enter a color you would like to use: ";
-	cin >> colorChoice;
+	// My play do while loop
+	do {		
+		// cout/cin statements that are used to get the users input 
+		cout << "Please enter a color you would like to use: ";
+		cin >> colorChoice;
 
-	// cout statement that asks the user what img they would like
-	cout << "what image would you like to see? ";
-	//cin >> ;
+		// cout/cin statements that are used to get the users input 
+		cout << "Select a image to show from slot 1, 2, or 3: ";
+		cin >> choice;
 
-	// cout to ask for type of image they want
+		if (choice == 1) {
+		// Ascii...imgs SMmiley USE -> cout << "" << endl;       PT1
+		// Also the sets the color user picked
+		SetConsoleTextAttribute(screen, colorChoice);
+		cout << "\n XXXXXXXXX " << endl;
+		cout << "X  0   0  X" << endl;
+		cout << "X         X" << endl;
+		cout << "X _     _ X" << endl;
+		cout << "X  -----  X" << endl;
+		cout << " XXXXXXXXX " << endl;
+		}
 
-	// Ascii...imgs SMmiley USE -> cout << "" << endl;       PT1
-	// Also the sets the color user picked
-	SetConsoleTextAttribute(screen, colorChoice);
-	cout << "\n XXXXXXXXX " << endl;
-	cout <<   "X  0   0  X" << endl;
-	cout <<   "X         X" << endl;
-	cout <<   "X _     _ X" << endl;
-	cout <<   "X  -----  X" << endl;
-	cout <<   " XXXXXXXXX " << endl;
+		if (choice == 2) {
+		// Ascii...imgs Triangle USE -> cout << "" << endl;      PT1
+		// Also the sets the color user picked
+		SetConsoleTextAttribute(screen, colorChoice);
+		// Not sure which way I want the triangle
+		//cout << "     X     " << endl;
+		//cout << "    XXX    " << endl;
+		//cout << "   XXXXX   " << endl;
+		//cout << "  XXXXXXX  " << endl;
+		//cout << " XXXXXXXXX " << endl;
+		cout << "\nXXXXXXXXXXX" << endl;
+		cout << " XXXXXXXXX " << endl;
+		cout << "  XXXXXXX  " << endl;
+		cout << "   XXXXX   " << endl;
+		cout << "    XXX    " << endl;
+		cout << "     X     " << endl;
+		}
 
-	// Ascii...imgs Triangle USE -> cout << "" << endl;      PT1
-	// Also the sets the color user picked
-	SetConsoleTextAttribute(screen, colorChoice);
-	// Not sure which way I want the triangle
-	//cout << "     X     " << endl;
-	//cout << "    XXX    " << endl;
-	//cout << "   XXXXX   " << endl;
-	//cout << "  XXXXXXX  " << endl;
-	//cout << " XXXXXXXXX " << endl;
-	cout << "\nXXXXXXXXXXX" << endl;
-	cout <<   " XXXXXXXXX " << endl;
-	cout <<   "  XXXXXXX  " << endl;
-	cout <<   "   XXXXX   " << endl;
-	cout <<   "    XXX    " << endl;
-	cout <<   "     X     " << endl;
+		if (choice == 3) {
+		// Ascii...imgs RandBunnyFlip USE -> cout << "" << endl;          PT3
+        // Also the sets the color user picked
+		SetConsoleTextAttribute(screen, colorChoice);
+		cout << "\nXXXXXXXXXXX" << endl;
+		cout << "X         X" << endl;
+		cout << "X  (/(/   X" << endl;
+      	cout << "X  (+-)   X" << endl;
+		cout << "X (()('') X" << endl;
+		cout << "X         X" << endl;
+		cout << "X WANTED  X" << endl;
+		cout << "XXXXXXXXXXX" << endl;
+		}
 
-	// Ascii...imgs RandBunnyFlip USE -> cout << "" << endl;          PT3
-	// Also the sets the color user picked
-	SetConsoleTextAttribute(screen, colorChoice);
-	cout << "\nXXXXXXXXXXX" << endl;
-	cout <<   "X         X" << endl;
-	cout <<   "X  (/(/   X" << endl;
-	cout <<   "X  (+-)   X" << endl;
-	cout <<   "X (()('') X" << endl;
-	cout <<   "X         X" << endl;
-	cout <<   "X WANTED  X" << endl;
-	cout <<   "XXXXXXXXXXX" << endl;
+		// go again prompt
+		cout << "Go again? (y/n) ";
+		cin >> again;
+
+	} while (again == "y");
 	
-
-	int i = 0;
-	//My play do while loop
-	do {
-
-	} while (i = 0);
-
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
