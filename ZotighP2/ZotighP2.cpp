@@ -28,7 +28,7 @@ int main()
 
 	// My play do while loop
 	do {
-		
+
 		// cout/cin statements that are used to get the users input 
 		cout << "\nPlease enter a color you would like to use: " << endl
 			<< "1 = Black" << endl
@@ -39,7 +39,7 @@ int main()
 			<< "6 = quit" << endl;
 		cin >> colorChoice;
 
-		if (colorChoice <= 5 && colorChoice >= 1) {
+		do {
 			// cout/cin statements that are used to get the users input 
 			cout << "Select a image to show from slot 1, 2, or 3: ";
 			cin >> choice;
@@ -86,15 +86,17 @@ int main()
 				cout << "X         X" << endl;
 				cout << "X WANTED  X" << endl;
 				cout << "XXXXXXXXXXX" << endl;
-			}
+			} 
 
-		}
+		} while (colorChoice <= 5 && colorChoice >= 1 && choice != 6);
 
-	// go again prompt
-	cout << "\nQuit? (y/n) ";
-    cin >> again;
+		// go again prompt
+		//cout << "\nQuit? (y/n) ";
+		//cin >> again;
+		
+	} while (colorChoice != 6);
 
-	} while (again == "n");
+	cout << "Thank you for using, good-bye!" << endl;
 	
 }
 
