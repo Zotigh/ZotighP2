@@ -17,8 +17,8 @@ int main()
 {
 	// Variables 
 	int colorChoice;
-	string again;
 	int choice;
+	string again;
 
 	// This is the HANDLE method
 	HANDLE screen = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -27,7 +27,8 @@ int main()
 	cout << "Purpose: A C++ program that asks the user to select a color and a shape to draw." << endl;
 
 	// My play do while loop
-	do {		
+	do {
+		
 		// cout/cin statements that are used to get the users input 
 		cout << "\nPlease enter a color you would like to use: " << endl
 			<< "1 = Black" << endl
@@ -38,59 +39,62 @@ int main()
 			<< "6 = quit" << endl;
 		cin >> colorChoice;
 
-		// cout/cin statements that are used to get the users input 
-		cout << "Select a image to show from slot 1, 2, or 3: ";
-		cin >> choice;
+		if (colorChoice <= 5 && colorChoice >= 1) {
+			// cout/cin statements that are used to get the users input 
+			cout << "Select a image to show from slot 1, 2, or 3: ";
+			cin >> choice;
 
-		if (choice == 1) {
-		// Ascii...imgs SMmiley USE -> cout << "" << endl;       PT1
-		// Also the sets the color user picked
-		SetConsoleTextAttribute(screen, colorChoice);
-		cout << "\n XXXXXXXXX " << endl;
-		cout << "X  0   0  X" << endl;
-		cout << "X         X" << endl;
-		cout << "X _     _ X" << endl;
-		cout << "X  -----  X" << endl;
-		cout << " XXXXXXXXX " << endl;
+			if (choice == 1) {
+				// Ascii...imgs SMmiley USE -> cout << "" << endl;       PT1
+				// Also the sets the color user picked
+				SetConsoleTextAttribute(screen, colorChoice);
+				cout << "\n XXXXXXXXX " << endl;
+				cout << "X  0   0  X" << endl;
+				cout << "X         X" << endl;
+				cout << "X _     _ X" << endl;
+				cout << "X  -----  X" << endl;
+				cout << " XXXXXXXXX " << endl;
+			}
+
+			if (choice == 2) {
+				// Ascii...imgs Triangle USE -> cout << "" << endl;      PT2
+				// Also the sets the color user picked
+				SetConsoleTextAttribute(screen, colorChoice);
+				// Not sure which way I want the triangle
+				//cout << "     X     " << endl;
+				//cout << "    XXX    " << endl;
+				//cout << "   XXXXX   " << endl;
+				//cout << "  XXXXXXX  " << endl;
+				//cout << " XXXXXXXXX " << endl;
+				cout << "\nXXXXXXXXXXX" << endl;
+				cout << " XXXXXXXXX " << endl;
+				cout << "  XXXXXXX  " << endl;
+				cout << "   XXXXX   " << endl;
+				cout << "    XXX    " << endl;
+				cout << "     X     " << endl;
+			}
+
+			if (choice == 3) {
+				// Ascii...imgs RandBunnyFlip USE -> cout << "" << endl;    PT3
+				// Also the sets the color user picked
+				SetConsoleTextAttribute(screen, colorChoice);
+				cout << "\nXXXXXXXXXXX" << endl;
+				cout << "X         X" << endl;
+				cout << "X  (/(/   X" << endl;
+				cout << "X  (+-)   X" << endl;
+				cout << "X (()('') X" << endl;
+				cout << "X         X" << endl;
+				cout << "X WANTED  X" << endl;
+				cout << "XXXXXXXXXXX" << endl;
+			}
+
 		}
 
-		if (choice == 2) {
-		// Ascii...imgs Triangle USE -> cout << "" << endl;      PT2
-		// Also the sets the color user picked
-		SetConsoleTextAttribute(screen, colorChoice);
-		// Not sure which way I want the triangle
-		//cout << "     X     " << endl;
-		//cout << "    XXX    " << endl;
-		//cout << "   XXXXX   " << endl;
-		//cout << "  XXXXXXX  " << endl;
-		//cout << " XXXXXXXXX " << endl;
-		cout << "\nXXXXXXXXXXX" << endl;
-		cout << " XXXXXXXXX " << endl;
-		cout << "  XXXXXXX  " << endl;
-		cout << "   XXXXX   " << endl;
-		cout << "    XXX    " << endl;
-		cout << "     X     " << endl;
-		}
+	// go again prompt
+	cout << "\nQuit? (y/n) ";
+    cin >> again;
 
-		if (choice == 3) {
-		// Ascii...imgs RandBunnyFlip USE -> cout << "" << endl;    PT3
-        // Also the sets the color user picked
-		SetConsoleTextAttribute(screen, colorChoice);
-		cout << "\nXXXXXXXXXXX" << endl;
-		cout << "X         X" << endl;
-		cout << "X  (/(/   X" << endl;
-      	cout << "X  (+-)   X" << endl;
-		cout << "X (()('') X" << endl;
-		cout << "X         X" << endl;
-		cout << "X WANTED  X" << endl;
-		cout << "XXXXXXXXXXX" << endl;
-		}
-
-		// go again prompt
-		cout << "\nGo again? (y/n) ";
-		cin >> again;
-
-	} while (again == "y");
+	} while (again == "n");
 	
 }
 
