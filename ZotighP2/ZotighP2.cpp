@@ -40,7 +40,9 @@ int main()
 		cin >> colorChoice;
 
 		//if statement to make sure that the desired range is acheived 
-		if (colorChoice <= 5 && colorChoice >= 1 && colorChoice != 6) {
+		// While stateent seens to have some sort of probel if statemet worked though ???
+		if (colorChoice <= 5 && colorChoice >= 1 && colorChoice != QUIT) {
+			// Second do while loop for images
 			do {
 				// cout/cin statements that are used to get the users input 
 				cout << "\nPlease select an image to show from the list of available images by typing the desired pictures corresponding number and pressing enter on the keyoard or type 6 and press enter to go back to color selector menu:" << endl
@@ -159,7 +161,10 @@ int main()
 		//}
 	} while (colorChoice != QUIT);
 
+	// Good bye message
  	cout << "Thank you for using, good-bye!" << endl;
+	
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
