@@ -30,7 +30,7 @@ int main()
 	do {
 		// cout/cin statements that are used to get the users input 
 		cout << "\nPlease select a color from the menu you would like to use by typing the desired colors corresponding number and pressing enter on the keyoard or type 6 and press enter to quit the program:" << endl
-			<< "\n1 = Black" << endl
+			<< "\n1 = Blue" << endl
 			<< "2 = Green" << endl
 			<< "3 = Cyan" << endl
 			<< "4 = Red" << endl
