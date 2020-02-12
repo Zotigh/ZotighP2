@@ -29,27 +29,32 @@ int main()
 	// My play do while loop
 	do {
 		// cout/cin statements that are used to get the users input 
-		cout << "\nPlease select a color you would like to use: " << endl
-			<< "1 = Black" << endl
+		cout << "\nPlease select a color from the menu you would like to use by typing the desired colors corresponding number and pressing enter on the keyoard or type 6 and press enter to quit the program:" << endl
+			<< "\n1 = Black" << endl
 			<< "2 = Green" << endl
 			<< "3 = Cyan" << endl
 			<< "4 = Red" << endl
 			<< "5 = Purple" << endl
-			<< "6 = quit" << endl;
+			<< "6 = quit" << endl
+			<< "\nYour Response: " ;
 		cin >> colorChoice;
 
 		//if statement to make sure that the desired range is acheived 
 		if (colorChoice <= 5 && colorChoice >= 1 && colorChoice != 6) {
 			do {
 				// cout/cin statements that are used to get the users input 
-				cout << "Select a image to show by typing 1, 2, or 3 followed by hitting enter" << endl 
-					<< "or type 6 and press enter to go back to color selector menu" << endl
+				cout << "\nPlease select an image to show from the list of available images by typing the desired pictures corresponding number and pressing enter on the keyoard or type 6 and press enter to go back to color selector menu:" << endl
+					<< "\n"
+					<< "1 = Smiley Face" << endl
+					<< "2 = Upside-Down triangle" << endl
+					<< "3 = WANTED" << endl
+					<< "6 = Go Back" << endl
 					<< "\nYour Response: ";
 				cin >> choice;
 
 				if (choice == 1) {
 					// Ascii...imgs SMmiley USE -> cout << "" << endl;       PT1
-					// Also the sets the color user picked
+					// Also the sets the color user picked to the light version
 					SetConsoleTextAttribute(screen, colorChoice + 8);
 					cout << "\n XXXXXXXXX " << endl;
 					cout << "X  0   0  X" << endl;
@@ -59,7 +64,7 @@ int main()
 					cout << " XXXXXXXXX " << endl;
 				} else if (choice == 2) {
 					// Ascii...imgs Triangle USE -> cout << "" << endl;      PT2
-					// Also the sets the color user picked
+					// Also the sets the color user picked to the light version
 					SetConsoleTextAttribute(screen, colorChoice + 8);
 					// Not sure which way I want the triangle
 					//cout << "     X     " << endl;
@@ -75,7 +80,7 @@ int main()
 					cout << "     X     " << endl;
 				} else if (choice == 3) {
 					// Ascii...imgs RandBunnyFlip USE -> cout << "" << endl;    PT3
-					// Also the sets the color user picked
+					// Also the sets the color user picked to the light version
 					SetConsoleTextAttribute(screen, colorChoice + 8);
 					cout << "\nXXXXXXXXXXX" << endl;
 					cout << "X         X" << endl;
