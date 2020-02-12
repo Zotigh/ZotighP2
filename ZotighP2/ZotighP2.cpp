@@ -42,6 +42,7 @@ int main()
 		//if statement to make sure that the desired range is acheived 
 		// While stateent seens to have some sort of probel if statemet worked though ???
 		if (colorChoice <= 5 && colorChoice >= 1 && colorChoice != QUIT) {
+			
 			// Second do while loop for images
 			do {
 				// cout/cin statements that are used to get the users input 
@@ -54,8 +55,9 @@ int main()
 					<< "\nYour Response: ";
 				cin >> choice;
 
+				// if/else if statements to check user input
 				if (choice == 1) {
-					// Ascii...imgs SMmiley USE -> cout << "" << endl;       PT1
+					// Ascii...imgs SMmiley PT1
 					// Also the sets the color user picked to the light version
 					SetConsoleTextAttribute(screen, colorChoice + 8);
 					cout << "\n XXXXXXXXX " << endl;
@@ -65,11 +67,11 @@ int main()
 					cout << "X  -----  X" << endl;
 					cout << " XXXXXXXXX " << endl;
 				} else if (choice == 2) {
-					// Ascii...imgs Triangle USE -> cout << "" << endl;      PT2
+					// Ascii...imgs Triangle PT2
 					// Also the sets the color user picked to the light version
 					SetConsoleTextAttribute(screen, colorChoice + 8);
-					// Not sure which way I want the triangle
-					//cout << "     X     " << endl;
+					// Switched triangle not sure if thats ok so it's there if not...
+					//cout << "\n     X     " << endl;
 					//cout << "    XXX    " << endl;
 					//cout << "   XXXXX   " << endl;
 					//cout << "  XXXXXXX  " << endl;
@@ -81,7 +83,7 @@ int main()
 					cout << "    XXX    " << endl;
 					cout << "     X     " << endl;
 				} else if (choice == 3) {
-					// Ascii...imgs RandBunnyFlip USE -> cout << "" << endl;    PT3
+					// Ascii...imgs Wanted_Bunny PT3
 					// Also the sets the color user picked to the light version
 					SetConsoleTextAttribute(screen, colorChoice + 8);
 					cout << "\nXXXXXXXXXXX" << endl;
@@ -96,6 +98,8 @@ int main()
 				}
 			} while (choice != QUIT);
 		}
+
+		// TODO's: Work on for future project to see if I can get it working porperly (below \/)
 
 		//if (colorChoice >= 5 && choice != QUIT || colorChoice <= 1 && choice != QUIT) {
 		//	//Cout to work with the erroe
@@ -159,6 +163,7 @@ int main()
 		//		} while (choice != QUIT);
 		//	}
 		//}
+
 	} while (colorChoice != QUIT);
 
 	// Good bye message
