@@ -41,18 +41,18 @@ int main()
 
 		//if statement to make sure that the desired range is acheived 
 		// While stateent seens to have some sort of probel if statemet worked though ???
-		if (colorChoice <= 5 && colorChoice >= 1 && colorChoice != QUIT) {
+		while (colorChoice <= 5 && colorChoice >= 1 && colorChoice != QUIT) {
 			
 			// Second do while loop for images
 			do {
 				// cout/cin statements that are used to get the users input 
-				cout << "\nPlease select an image to show from the list of available images by typing the desired pictures corresponding number" 
+				cout << "\nPlease select an image to show from the list of available images by typing the desired pictures corresponding number" << endl
 					<<"and pressing enter on the keyoard or type 6 and press enter to go back to color selector menu:" << endl
 					<< "\n"
 					<< "1 = Smiley Face" << endl
 					<< "2 = Upside-Down triangle" << endl
 					<< "3 = WANTED" << endl
-					<< "6 = Go Back and Re-select COLOR" << endl
+					<< "6 = Go Back and Re-Select COLOR" << endl
 					<< "\nYour Response: ";
 				cin >> choice;
 
