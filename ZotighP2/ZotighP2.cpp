@@ -41,7 +41,7 @@ int main()
 
 		//if statement to make sure that the desired range is acheived 
 		// While stateent seens to have some sort of probel if statemet worked though ???
-		while (colorChoice <= 5 && colorChoice >= 1 && colorChoice != QUIT) {
+		if (colorChoice <= 5 && colorChoice >= 1 && colorChoice != QUIT) {
 			
 			// Second do while loop for images
 			do {
