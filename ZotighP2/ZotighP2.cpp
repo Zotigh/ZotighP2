@@ -55,8 +55,8 @@ int main()
 			cin >> colorChoice;
 		}
 
-		// While statement to control the users unput is valid to move on to the next option menu
-		while (colorChoice <= 5 && colorChoice >= 1 && colorChoice != QUIT) {
+		// if statement to control the users unput is valid to move on to the next option menu
+		if (colorChoice <= 5 && colorChoice >= 1 && colorChoice != QUIT) {
 			
 			// Second do while loop for images
 			do {
@@ -70,6 +70,20 @@ int main()
 					<< "6 = Go Back and Re-Select COLOR" << endl
 					<< "\nYour Response: ";
 				cin >> choice;
+
+				if (choice <= 0 || choice >= 4 && choice != QUIT) {
+					// cout/cin statements that are used to get the users input 
+					cout << "\nInvalid Entry!" << endl
+						<< "\nPlease re-select an image to show from the list of available images by typing the desired pictures corresponding number" << endl
+						<< "and pressing enter on the keyoard or type 6 and press enter to go back to color selector menu:" << endl
+						<< "\n"
+						<< "1 = Smiley Face" << endl
+						<< "2 = Upside-Down triangle" << endl
+						<< "3 = WANTED" << endl
+						<< "6 = Go Back and Re-Select COLOR" << endl
+						<< "\nYour Response: ";
+					cin >> choice;
+			    }
 
 				// if/else if statements to check user input
 				if (choice == 1) {
@@ -111,19 +125,6 @@ int main()
 					cout << "X         X" << endl;
 					cout << "X WANTED  X" << endl;
 					cout << "XXXXXXXXXXX" << endl;
-				}
-				else if (choice <= 0 || choice >= 4) {
-					// cout/cin statements that are used to get the users input 
-					cout << "Invalid Entry!"
-						<< "\nPlease re-select an image to show from the list of available images by typing the desired pictures corresponding number" << endl
-						<< "and pressing enter on the keyoard or type 6 and press enter to go back to color selector menu:" << endl
-						<< "\n"
-						<< "1 = Smiley Face" << endl
-						<< "2 = Upside-Down triangle" << endl
-						<< "3 = WANTED" << endl
-						<< "6 = Go Back and Re-Select COLOR" << endl
-						<< "\nYour Response: ";
-					cin >> choice;
 				}
 			} while (choice != QUIT);
 		}
