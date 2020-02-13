@@ -41,8 +41,18 @@ int main()
 		cin >> colorChoice;
 
 		// if statement to make sure that the desired range is acheived 
-		if (colorChoice == 0) {
-		
+		if (colorChoice <= 1 || colorChoice >= 7) {
+
+			// cout/cin statements that are used to get the users input 
+			cout << "\nPlease re-enter a selection from the color menu you would like to use by typing the desired colors corresponding number and pressing enter on the keyoard or type 6 and press enter to quit the program:" << endl
+				<< "\n1 = Blue" << endl
+				<< "2 = Green" << endl
+				<< "3 = Cyan" << endl
+				<< "4 = Red" << endl
+				<< "5 = Purple" << endl
+				<< "6 = quit" << endl
+				<< "\nYour Response: ";
+			cin >> colorChoice;
 		}
 
 		// While statement to control the users unput is valid to move on to the next option menu
