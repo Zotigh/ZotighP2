@@ -1,4 +1,4 @@
-// ZotighP2.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// ZotighP2.cpp 
 // Lance Zotigh (lzotigh1@cnm.edu)
 // Date: (2/10/19 - 1/17/19)
 // Purpose: A C++ program that asks the user to select a color and a shape to draw.  
@@ -85,7 +85,7 @@ int main()
 					cin >> choice;
 			    }
 
-				// if/else if statements to check user input
+				// Nested if statement to deal with users input 
 				if (choice == 1) {
 					// Ascii...imgs SMmiley PT1
 					// Also the sets the color user picked to the light version
@@ -112,7 +112,9 @@ int main()
 					cout << "   XXXXX   " << endl;
 					cout << "    XXX    " << endl;
 					cout << "     X     " << endl;
-				} else if (choice == 3) {
+				}
+				//Was going to leave as 3 but I thought I might as well add the usage of the MAX_PIX Constant variable somewhere.
+				else if (choice == MAX_PIX) {
 					// Ascii...imgs Wanted_Bunny PT3
 					// Also the sets the color user picked to the light version
 					SetConsoleTextAttribute(screen, colorChoice + 8);
@@ -128,72 +130,6 @@ int main()
 				}
 			} while (choice != QUIT);
 		}
-
-		// TODO's: Work on for future project to see if I can get it working porperly (below \/)
-
-		//if (colorChoice >= 5 && choice != QUIT || colorChoice <= 1 && choice != QUIT) {
-		//	//Cout to work with the erroe
-
-		//	// cout/cin statements that are used to get the users input 
-		//	cout << "\nPlease re-enter a color you would like to use: " << endl
-		//		<< "1 = Black" << endl
-		//		<< "2 = Green" << endl
-		//		<< "3 = Cyan" << endl
-		//		<< "4 = Red" << endl
-		//		<< "5 = Purple" << endl
-		//		<< "6 = quit" << endl;
-		//	cin >> colorChoice;
-
-		//if (colorChoice > 5 && colorChoice >= 1) {
-		//	do {
-		//	    // cout/cin statements that are used to get the users input 
-		//		cout << "Select a image to show from slot 1, 2, or 3: ";
-		//		cin >> choice;
-
-		//			if (choice == 1) {
-		//				// Ascii...imgs SMmiley USE -> cout << "" << endl;       PT1
-		//				// Also the sets the color user picked
-		//				SetConsoleTextAttribute(screen, colorChoice + 8);
-		//				cout << "\n XXXXXXXXX " << endl;
-		//				cout << "X  0   0  X" << endl;
-		//				cout << "X         X" << endl;
-		//				cout << "X _     _ X" << endl;
-		//				cout << "X  -----  X" << endl;
-		//				cout << " XXXXXXXXX " << endl;
-		//			} else if (choice == 2) {
-		//				// Ascii...imgs Triangle USE -> cout << "" << endl;      PT2
-		//				// Also the sets the color user picked
-		//				SetConsoleTextAttribute(screen, colorChoice + 8);
-		//				// Not sure which way I want the triangle
-		//				//cout << "     X     " << endl;
-		//				//cout << "    XXX    " << endl;
-		//				//cout << "   XXXXX   " << endl;
-		//				//cout << "  XXXXXXX  " << endl;
-		//				//cout << " XXXXXXXXX " << endl;
-		//				cout << "\nXXXXXXXXXXX" << endl;
-		//				cout << " XXXXXXXXX " << endl;
-		//				cout << "  XXXXXXX  " << endl;
-		//				cout << "   XXXXX   " << endl;
-		//				cout << "    XXX    " << endl;
-		//				cout << "     X     " << endl;
-		//			} else if (choice == 3) {
-		//				// Ascii...imgs RandBunnyFlip USE -> cout << "" << endl;    PT3
-		//				// Also the sets the color user picked
-		//				SetConsoleTextAttribute(screen, colorChoice + 8);
-		//				cout << "\nXXXXXXXXXXX" << endl;
-		//				cout << "X         X" << endl;
-		//				cout << "X  (/(/   X" << endl;
-		//				cout << "X  (+-)   X" << endl;
-		//				cout << "X (()('') X" << endl;
-		//				cout << "X         X" << endl;
-		//				cout << "X         X" << endl;
-		//				cout << "X WANTED  X" << endl;
-		//				cout << "XXXXXXXXXXX" << endl;
-		//			}
-		//		} while (choice != QUIT);
-		//	}
-		//}
-
 	} while (colorChoice != QUIT);
 
 	// Good bye message
@@ -201,14 +137,3 @@ int main()
 	
 	return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
