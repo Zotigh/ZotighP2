@@ -26,6 +26,7 @@ int main()
 	// cout statement that tells the user 
 	cout << "Purpose: A C++ program that asks the user to select a color and a shape to draw." << endl;
 
+	// add a if statement to loop back if there is an invalid user input 
 	// My play do while loop
 	do {
 		// cout/cin statements that are used to get the users input 
@@ -39,9 +40,13 @@ int main()
 			<< "\nYour Response: " ;
 		cin >> colorChoice;
 
-		//if statement to make sure that the desired range is acheived 
-		// While stateent seens to have some sort of probel if statemet worked though ???
-		if (colorChoice <= 5 && colorChoice >= 1 && colorChoice != QUIT) {
+		// if statement to make sure that the desired range is acheived 
+		if (colorChoice == 0) {
+		
+		}
+
+		// While statement to control the users unput is valid to move on to the next option menu
+		while (colorChoice <= 5 && colorChoice >= 1 && colorChoice != QUIT) {
 			
 			// Second do while loop for images
 			do {
@@ -71,7 +76,7 @@ int main()
 					// Ascii...imgs Triangle PT2
 					// Also the sets the color user picked to the light version
 					SetConsoleTextAttribute(screen, colorChoice + 8);
-					// Switched triangle not sure if thats ok so it's there if not...
+					// Switched triangle not sure if thats ok so, it's there if not...
 					//cout << "\n     X     " << endl;
 					//cout << "    XXX    " << endl;
 					//cout << "   XXXXX   " << endl;
