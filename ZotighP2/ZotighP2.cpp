@@ -40,11 +40,11 @@ int main()
 			<< "\nYour Response: " ;
 		cin >> colorChoice;
 
-		// if statement to make sure that the desired range is acheived 
+		// if statement to make sure that the desired input range is acheived 
 		if (colorChoice <= 1 || colorChoice >= 7) {
-
-			// cout/cin statements that are used to get the users input 
-			cout << "\nPlease re-enter a selection from the color menu you would like to use by typing the desired colors corresponding number and pressing enter on the keyoard or type 6 and press enter to quit the program:" << endl
+			// cout/cin statements that are used to get the users re-entered input 
+			cout << "\nInvalid Entry!" << endl
+				<< "\nPlease re-enter a selection from the color menu you would like to use by typing the desired colors corresponding number and pressing enter on the keyoard or type 6 and press enter to quit the program:" << endl
 				<< "\n1 = Blue" << endl
 				<< "2 = Green" << endl
 				<< "3 = Cyan" << endl
@@ -111,6 +111,19 @@ int main()
 					cout << "X         X" << endl;
 					cout << "X WANTED  X" << endl;
 					cout << "XXXXXXXXXXX" << endl;
+				}
+				else if (choice <= 0 || choice >= 4) {
+					// cout/cin statements that are used to get the users input 
+					cout << "Invalid Entry!"
+						<< "\nPlease re-select an image to show from the list of available images by typing the desired pictures corresponding number" << endl
+						<< "and pressing enter on the keyoard or type 6 and press enter to go back to color selector menu:" << endl
+						<< "\n"
+						<< "1 = Smiley Face" << endl
+						<< "2 = Upside-Down triangle" << endl
+						<< "3 = WANTED" << endl
+						<< "6 = Go Back and Re-Select COLOR" << endl
+						<< "\nYour Response: ";
+					cin >> choice;
 				}
 			} while (choice != QUIT);
 		}
