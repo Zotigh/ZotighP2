@@ -93,17 +93,18 @@ int main()
 				// Nested if statement to deal with users input 
 				if (choice == 1) {
 					// Ascii...imgs SMmiley PT1
-					// Also the sets the color user picked to the light version
+					// Also sets the color user the picked to the light version
 					SetConsoleTextAttribute(screen, colorChoice + 8);
-					cout << "\n XXXXXXXXX " << endl;
+					cout << "\nXXXXXXXXXXX" << endl;
 					cout << "X  0   0  X" << endl;
 					cout << "X         X" << endl;
 					cout << "X _     _ X" << endl;
 					cout << "X  -----  X" << endl;
-					cout << " XXXXXXXXX " << endl;
+					cout << "XXXXXXXXXXX" << endl;
+			
 				} else if (choice == 2) {
 					// Ascii...imgs Triangle PT2
-					// Also the sets the color user picked to the light version
+					// Also sets the color the user picked to the light version
 					SetConsoleTextAttribute(screen, colorChoice + 8);
 					// Switched triangle not sure if thats ok so, it's there if not...
 					//cout << "\n     X     " << endl;
@@ -121,7 +122,7 @@ int main()
 				//Was going to leave as 3 but I thought I might as well add the usage of the MAX_PIX Constant variable somewhere.
 				else if (choice == MAX_PIX) {
 					// Ascii...imgs Wanted_Bunny PT3
-					// Also the sets the color user picked to the light version
+					// Also sets the color the user picked to the light version
 					SetConsoleTextAttribute(screen, colorChoice + 8);
 					cout << "\nXXXXXXXXXXX" << endl;
 					cout << "X         X" << endl;
