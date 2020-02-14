@@ -33,8 +33,8 @@ int main()
 	// My play do while loop
 	do {
 		// cout/cin statements that are used to get the users input 
-		cout << "\nPlease select a color from the menu you would like to use by typing the desired "
-			<< "colors corresponding number and pressing enter on the keyoard or type 6 and press enter on the keyoard to quit the program:" << endl
+		cout << "\nPlease select a color from the menu you would like to use by typing the desired colors corresponding number and pressing" << endl
+			<< "enter on the keyoard or type 6 and press enter on the keyoard to quit the program:" << endl
 			<< "\n1 = Blue" << endl
 			<< "2 = Green" << endl
 			<< "3 = Cyan" << endl
@@ -48,8 +48,8 @@ int main()
 		if (colorChoice <= 1 || colorChoice >= 7) {
 			// cout/cin statements that are used to get the users re-entered input 
 			cout << "\nInvalid Entry!" << endl
-				<< "\nPlease re-enter a selection from the color menu you would like to use by typing "
-				<<"the desired colors corresponding number and pressing enter on the keyoard or type 6 and press enter to quit the program:" << endl
+				<< "\nPlease re-enter a valid selection from the color menu you would like to use by typing the desired colors corresponding" << endl
+				<< "number and pressing enter on the keyoard or type 6 and press enter on the keyboard to quit the program:" << endl
 				<< "\n1 = Blue" << endl
 				<< "2 = Green" << endl
 				<< "3 = Cyan" << endl
