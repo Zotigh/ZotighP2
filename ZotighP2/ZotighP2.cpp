@@ -10,7 +10,10 @@ using namespace std;
 
 // Constants
 const int QUIT = 6;
-const int MAX_COLORS = 6;
+// Wasn't sure if I'd get docked so it's here however I didnt initilize it and it was never used. I understand that it can 
+// be of use to have multiple names with matching values in different classes however since this is in the same class I found it redundant to 
+// repeat. ->
+//const int MAX_COLORS = 6;
 const int MAX_PIX = 3; 
 
 int main()
@@ -30,7 +33,8 @@ int main()
 	// My play do while loop
 	do {
 		// cout/cin statements that are used to get the users input 
-		cout << "\nPlease select a color from the menu you would like to use by typing the desired colors corresponding number and pressing enter on the keyoard or type 6 and press enter to quit the program:" << endl
+		cout << "\nPlease select a color from the menu you would like to use by typing the desired "
+			<< "colors corresponding number and pressing enter on the keyoard or type 6 and press enter on the keyoard to quit the program:" << endl
 			<< "\n1 = Blue" << endl
 			<< "2 = Green" << endl
 			<< "3 = Cyan" << endl
@@ -44,7 +48,8 @@ int main()
 		if (colorChoice <= 1 || colorChoice >= 7) {
 			// cout/cin statements that are used to get the users re-entered input 
 			cout << "\nInvalid Entry!" << endl
-				<< "\nPlease re-enter a selection from the color menu you would like to use by typing the desired colors corresponding number and pressing enter on the keyoard or type 6 and press enter to quit the program:" << endl
+				<< "\nPlease re-enter a selection from the color menu you would like to use by typing "
+				<<"the desired colors corresponding number and pressing enter on the keyoard or type 6 and press enter to quit the program:" << endl
 				<< "\n1 = Blue" << endl
 				<< "2 = Green" << endl
 				<< "3 = Cyan" << endl
