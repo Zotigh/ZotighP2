@@ -45,7 +45,7 @@ int main()
 		cin >> colorChoice;
 
 		// if statement to make sure that the desired input range is acheived 
-		if (colorChoice <= 1 || colorChoice >= 7) {
+		if (colorChoice <= 0 || colorChoice >= 7) {
 			// cout/cin statements that are used to get the users re-entered input 
 			cout << "\nInvalid Entry!" << endl
 				<< "\nPlease re-enter a valid selection from the color menu you would like to use by typing the desired colors corresponding" << endl
@@ -63,7 +63,7 @@ int main()
 		// if statement to control the users unput is valid to move on to the next option menu
 		if (colorChoice <= 5 && colorChoice >= 1 && colorChoice != QUIT) {
 			
-			// Second do while loop for images
+			// Second do while loop for images and to check for the input that the user puts
 			do {
 				// cout/cin statements that are used to get the users input 
 				cout << "\nPlease select an image to show from the list of available images by typing the desired pictures corresponding number" << endl
@@ -75,7 +75,7 @@ int main()
 					<< "6 = Go Back and Re-Select COLOR" << endl
 					<< "\nYour Response: ";
 				cin >> choice;
-
+				// If statement that handles a ivalid choice
 				if (choice <= 0 || choice >= 4 && choice != QUIT) {
 					// cout/cin statements that are used to get the users input 
 					cout << "\nInvalid Entry!" << endl
