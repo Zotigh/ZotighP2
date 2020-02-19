@@ -21,7 +21,6 @@ int main()
 	// Variables 
 	int colorChoice;
 	int choice;
-	string again;
 
 	// This is the HANDLE method
 	HANDLE screen = GetStdHandle(STD_OUTPUT_HANDLE);
