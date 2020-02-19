@@ -42,6 +42,7 @@ int main()
 			<< "6 = quit" << endl
 			<< "\nYour Response: " ;
 		cin >> colorChoice;
+		cin.ignore();
 
 		// if statement to make sure that the desired input range is acheived 
 		if (colorChoice <= 0 || colorChoice >= 7) {
@@ -57,6 +58,7 @@ int main()
 				<< "6 = quit" << endl
 				<< "\nYour Response: ";
 			cin >> colorChoice;
+			cin.ignore();
 		}
 
 		// if statement to control the users unput is valid to move on to the next option menu
@@ -74,6 +76,7 @@ int main()
 					<< "6 = Go Back and Re-Select COLOR" << endl
 					<< "\nYour Response: ";
 				cin >> choice;
+				cin.ignore();
 				// If statement that handles a ivalid choice
 				if (choice <= 0 || choice >= 4 && choice != QUIT) {
 					// cout/cin statements that are used to get the users input 
@@ -87,6 +90,7 @@ int main()
 						<< "6 = Go Back and Re-Select COLOR" << endl
 						<< "\nYour Response: ";
 					cin >> choice;
+					cin.ignore();
 			    }
 
 				// Nested if statement to deal with users input 
